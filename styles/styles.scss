@@ -63,7 +63,7 @@ section {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 3rem 6rem;
+    padding: 2rem 4rem;
 }
 
 .container {
@@ -258,6 +258,8 @@ section {
             line-height: 2rem;
             padding: 1rem;
             color: var(--color-grey-1);
+            text-align: justify;
+            text-justify: inter-word;
         }
         h4 {
             font-size: 2rem;
@@ -270,7 +272,7 @@ section {
     padding-bottom: 4rem;
     .progress-bars {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
         .progress-bar {
             display: flex;
@@ -300,12 +302,20 @@ section {
                         transition: all .4s ease-in-out;
                         width: 60%;
                     }
-                    .html { width: 80%; }
-                    .css { width: 95%; }
+                    .html { width: 95%; }
+                    .css { width: 75%; }
                     .js { width: 75%; }
-                    .react{ width: 60%; }
-                    .node{ width: 87%; }
-                    .python{ width: 70%; }
+                    .php{ width: 75%; }
+                    .python{ width: 85%; }
+                    .java{width: 90% }
+                    .cpluslus{width: 90% }
+                    .rscript{width: 70% }
+                    .reactjs{width: 65% }
+                    .reactnative{width: 65% }
+                    .firebase{width: 85% }
+                    .tensorflow{width: 80% }
+                    .mysql{width: 85% }
+                    .xampp{width: 85% }
                 }
             }
         }
@@ -327,7 +337,18 @@ section {
         background-color: var(--color-grey-5);
         transform: translateX(-50%);
     }
+    
 }
+// .stat-header-languages, .stat-header-framework{
+//     text-transform: uppercase;
+//     font-size: 1.1rem;
+//     font-style: italic;
+//     position: relative;
+//     text-align: center;
+//     margin-bottom: 1.5rem;
+//     margin-top: 1.5rem;
+// }
+
 
 /*Timeline*/
 .timeline {
