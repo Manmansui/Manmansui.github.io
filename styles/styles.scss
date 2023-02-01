@@ -23,7 +23,7 @@
 
 .light-mode {
     --color-primary: #FFFFFF;
-    --color-secondary: #F56692;
+    --color-secondary: #61E294;
     --color-white: #454e56;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -613,6 +613,25 @@ section {
             display: flex;
             :last-child{
                 margin-left: 1.5rem;
+            }
+        }
+        .btn-submit{
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btn-submit-message{
+                font-size: 1.2rem;
+                color: var(--color-white);
+                cursor: pointer;
+                background-color: #61E294;
+                padding:.8rem 1.1rem;
+                border-radius: 30px;
+                border: none;
+                outline: none;
+                width: fit-content;
+                font-weight: 600;
+                
             }
         }
         .submit-btn {

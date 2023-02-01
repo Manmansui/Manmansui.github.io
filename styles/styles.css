@@ -23,7 +23,7 @@
 
 .light-mode {
   --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-secondary: #61E294;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -653,6 +653,26 @@ section {
 }
 .contact-content-con .right-contact .i-c-2 :last-child {
   margin-left: 1.5rem;
+}
+.contact-content-con .right-contact .btn-submit {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-content-con .right-contact .btn-submit .btn-submit-message {
+  font-size: 1.2rem;
+  color: var(--color-white);
+  cursor: pointer;
+  background-color: #61E294;
+  padding: 0.8rem 1.1rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
 }
 .contact-content-con .right-contact .submit-btn {
   display: flex;
