@@ -75,17 +75,8 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: appear 1s ease-in-out;
-          animation: appear 1s ease-in-out;
+  animation: appear 1s ease-in-out;
   transform: translateY(0) scaleY(1);
-}
-@-webkit-keyframes appear {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
 }
 @keyframes appear {
   0% {
@@ -167,6 +158,8 @@ section {
   display: flex;
   align-items: center;
   position: relative;
+  height: 100vh; /* reduce if necessary */
+  min-height: 0; /* add this to allow content to shrink */
 }
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
@@ -189,6 +182,7 @@ section {
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
+  -webkit-user-drag: none;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -669,7 +663,6 @@ section {
   border-radius: 30px;
   border: none;
   outline: none;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 600;
