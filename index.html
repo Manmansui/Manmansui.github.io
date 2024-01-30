@@ -1,5 +1,16 @@
+<!-- <?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Process form data
+
+    // Redirect to another page
+    header("Location: thank_you.php", true, 303);
+    exit;
+}
+?> -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
@@ -17,13 +28,14 @@
         rel="stylesheet">
 </head>
 
+
 <body class="main-content">
     <header class="container header active" id="home">
         <div class="header-content">
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <!-- <img src="img/firman.png" alt=""> -->
+                     <img src="img/firman.png" alt="Profile Image">  <!--img/firman.png -->
                 </div>
             </div>
             <div class="right-header">
@@ -38,8 +50,7 @@
                     In my free time, I am actively involved as the secretary of the Navy organization, PALAPES UMS. -->
                     As an avid IT enthusiast, I am eager to gain hands-on experience and further expand my knowledge in
                     the dynamic field of IT while applying my technical skills. <br>
-                    As a recent graduate in Computer
-                    Science, I have not only completed a range of courses in programming languages, computer systems,
+                    I have not only completed a range of courses in programming languages, computer systems,
                     and networks but have also undertaken various jobs that enriched my practical understanding. Having
                     actively participated in both coursework and real-world projects, I am confident in my ability to
                     contribute effectively to a professional team. I am enthusiastic about learning and assured that my
@@ -448,7 +459,7 @@
                 </div>
             </div>
         </section>
-        <section class="container" id="blogs">
+        <!-- <section class="container" id="blogs">
             <div class="blogs-content">
                 <div class="main-title">
                     <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
@@ -528,7 +539,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="container contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
@@ -536,7 +547,7 @@
                 </div>
                 <div class="contact-content-con">
                     <div class="left-contact">
-                        <h4>Looking to get in touch?</h4>
+                        <h4>Get in touch?</h4>
                         <p>
                             You've come to the right place!
                             Here you'll find all the information you need to reach me. From my location to my email
@@ -582,28 +593,35 @@
 
                         <div class="contact-icons">
                             <div class="contact-icon">
-                                <a href="www.facebook.com" target="_blank">
+                                <!-- <a href="www.facebook.com" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" target="_blank">
                                     <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" target="_blank">
+                                </a> -->
+                                <a href="https://github.com/Manmansui" target="_blank">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" target="_blank">
+                                <!-- <a href="#" target="_blank">
                                     <i class="fab fa-youtube"></i>
+                                </a> -->
+                                <a href="mailto:firmanridwan12309@gmail.com" target="_blank">
+                                    <i class="far fa-envelope-open"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/firman-ridwan/" target="_blank">
+                                    <i class="fab fa-linkedin"></i> <!-- LinkedIn icon -->
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="https://getform.io/f/dbe57e3e-3b14-49bf-8dc1-4a20ce64138d" method="POST"
+                        <form action="https://getform.io/f/65d3b94b-05fc-4ca9-8a3d-72b2c5870bc6" method="POST"
                             class="contact-form">
                             <div class="input-control i-c-2">
                                 <input type="text" required placeholder="YOUR NAME" name="name">
                                 <input type="email" required placeholder="YOUR EMAIL" name="email">
                             </div>
+                            <input type="hidden" name="_gotcha" style="display:none !important">
                             <div class="input-control">
                                 <input type="text" required placeholder="ENTER SUBJECT" name="subject">
                             </div>
@@ -637,9 +655,9 @@
         <div class="control" data-id="portfolio">
             <i class="fas fa-briefcase"></i>
         </div>
-        <div class="control" data-id="blogs">
+        <!-- <div class="control" data-id="blogs">
             <i class="far fa-newspaper"></i>
-        </div>
+        </div> -->
         <div class="control" data-id="contact">
             <i class="fas fa-envelope-open"></i>
         </div>
