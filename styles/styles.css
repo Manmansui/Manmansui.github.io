@@ -64,6 +64,15 @@
   /* width: 10px !important; */
 }
 
+/* #particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: 50% 50%;
+} */
+
 /* ::-webkit-scrollbar-thumb:hover::before {
   content: '';
   display: block;
@@ -71,6 +80,17 @@
   width: 100%;
   cursor: pointer !important;
 } */
+
+#home{
+  z-index : 999;
+}
+
+#home canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
 
 /* Additional styling for better specificity */
 body ::-webkit-scrollbar-thumb:hover {
@@ -198,8 +218,20 @@ section {
   pointer-events: none;
 }
 
+/* #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure the particles are behind the header content 
+} */
+
 /*Header-content*/
 .header-content {
+  /* position: relative;
+  /* Ensure the header content is positioned correctly relative to its parent */
+  /* z-index: 1;  */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
@@ -230,28 +262,33 @@ section {
 
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 50%;
-  width: 50%;
+  height: 70%;
+  width: 70%;
   margin-left: 10rem;
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center content horizontally */
-  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  /* background-color: #121212; */
+  /* border-radius: 50%; */
   transition: all 0.4s ease-in-out;
 }
 
 .header-content .left-header .image img {
   -webkit-user-drag: none;
-  width: 90%;
-  height: 90%;
+  width: 70%;
+  height: 70%;
   -o-object-fit: cover;
   object-fit: cover;
   transition: all 0.4s ease-in-out;
-  /* filter: grayscale(100%); */
+  border-radius: 50%;
+  /* Apply border-radius to make the image circular */
+  background-color: #191a1b;
+  box-shadow: 0px 0px 20px rgba(58, 51, 51, 0.5);
+  /* Add a soft shadow for depth */
   margin-top: 6%;
 }
 
 /* .header-content .left-header .image img:hover { */
-  /* filter: grayscale(0); */
+/* filter: grayscale(0); */
 /* } */
 
 .header-content .right-header {
